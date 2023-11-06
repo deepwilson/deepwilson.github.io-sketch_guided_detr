@@ -133,6 +133,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
+             While sketches’ potential for image retrieval has been extensively explored, their applicability in object detection tasks has received comparatively less attention. Recent research  has naturally evolved from SBIR to the more challenging task of sketch-guided
+object localization (SGOL). SGOL entails precisely identifying and localizing objects within images based on sketches, a task that holds immense potential in enhancing various
+applications.
+However, all the prior works focus on object detection using a single sketch patch at inference
+time. This limitation restricts end-users to detecting only simple instances. For example if a user
+draws a sketch of a zebra, the algorithm will localize all instances of zebras within the photo. This
+brings attention to a crucial issue: the inability to detect objects within natural images with any
+form of spatial awareness. For instance, users might be interested in detecting complex scenes such as a “dog” to the right of a “person” or a “group of 3 zebras together”, involving multiple
+objects with meaningful spatial alignment.
+In this study, for the first time, we address this limitation by introducing a modified version of
+DETR. Our approach incorporates a query canvas that empowers end users to draw multiple
+sketch instances. This allows for the detection of objects while taking their spatial alignment into
+account
 Our primary research focus revolves around simplifying the process of querying multiple objects
 without the need for constant redrawing. We aim to provide users with a canvas, enabling them to
 sketch complex scenes and subsequently retrieve objects while preserving spatial alignment and
